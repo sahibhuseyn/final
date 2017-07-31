@@ -1,0 +1,46 @@
+//colors
+$white: #fff;
+$black: #0c0c0c;
+$highlight: #385c7b;
+$muted-gray: #282828;
+$green: #66bb6a;
+$purple: #e91e63;
+
+//usefull measures
+$margin: 2em;
+$padding: 2em;
+
+//Font family
+$font-family: 'Open Sans',arial,sans-serif;
+
+// general links
+@mixin links (){
+	color: $white;
+	text-decoration: none;
+	&:hover, &:active{
+		color: $highlight;
+	}
+}
+
+@mixin absolute($top, $left){
+	position: absolute;
+	top: $top;
+	left: $left;
+}
+
+@mixin relative($top, $left){
+	position: relative;
+	top: $top;
+	left: $left;
+}
+
+@mixin fixed($top, $left){
+	position: fixed;
+	top: $top;
+	left: $left;
+}
+
+@mixin size($width, $height){
+	width: $width;
+	height: $height;
+}

@@ -1,0 +1,33 @@
+//mixins for cross browser
+@mixin transform($content){
+	transform: $content;
+	-webkit-transform: $content;
+	-ms-transform: $content;
+	-o-transform: $content;
+	-moz-transform: $content;
+}
+
+@mixin transition($form, $time, $value){
+	transition: $form $time $value;
+	-webkit-transition: $form $time $value;
+	-moz-transition: $form $time $value;
+	-o-transition: $form $time $value;
+}
+
+@mixin background($color, $rgba, $deg){
+	background: linear-gradient($color $rgba $deg);
+	background: -moz-linear-gradient($color $rgba $deg);
+	background: -webkit-linear-gradient($color $rgba $deg);
+	background: -o-linear-gradient($color $rgba $deg);
+}
+
+@mixin box-shadow($val1, $val2, $val3, $val4, $val5){
+	box-shadow: $val1 $val2 $val3 $val4 $val5;
+	-webkit-box-shadow: $val1 $val2 $val3 $val4 $val5;
+	-moz-box-shadow: $val1 $val2 $val3 $val4 $val5;
+}
+@mixin box-sizing(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
